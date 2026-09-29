@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orbit</title>
+<meta name="description" content="Orbit is a personal organizer desktop app: notes, tasks, goals, a calendar and email in one place.">
+<style>
+  :root { color-scheme: dark; --bg: #050506; --card: #0d0c11; --line: #23202c; --text: #ece9f3; --muted: #a39db3; --accent: #c79bff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif; overflow-wrap: anywhere; }
+  main { max-width: 640px; margin: 0 auto; padding: 56px 16px 40px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+  header svg { width: 64px; height: 64px; flex: none; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; }
+  .tag { margin: 2px 0 0; color: var(--muted); }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin: 28px 0 20px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; display: flex; gap: 18px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="0 0 512 512" role="img" aria-label="Orbit logo">
+      <defs>
+        <linearGradient id="g" x1="0" y1="128" x2="0" y2="384" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#8b3fd6"/>
+        </linearGradient>
+        <clipPath id="planet"><circle cx="256" cy="256" r="124"/></clipPath>
+      </defs>
+      <g transform="rotate(-24 256 256)">
+        <path d="M 40 256 A 216 78 0 0 1 472 256" fill="none" stroke="#a66ee8" stroke-width="22" stroke-linecap="round"/>
+      </g>
+      <circle cx="256" cy="256" r="124" fill="url(#g)"/>
+      <circle cx="256" cy="256" r="110" fill="none" stroke="#ffffff" stroke-opacity=".16" stroke-width="5"/>
+      <g transform="rotate(-24 256 256)">
+        <path d="M 472 256 A 216 78 0 0 1 40 256" fill="none" stroke="#2a1745" stroke-width="42" stroke-linecap="round" clip-path="url(#planet)"/>
+        <path d="M 472 256 A 216 78 0 0 1 40 256" fill="none" stroke="#e9d5ff" stroke-width="22" stroke-linecap="round"/>
+      </g>
+      <circle cx="424" cy="98" r="24" fill="#e9d5ff"/>
+    </svg>
+    <div>
+      <h1>Orbit</h1>
+      <p class="tag">A personal organizer for the desktop</p>
+    </div>
+  </header>
+
+  <p>Orbit keeps notes, tasks, goals, a calendar and email in one place, with reminders, habits and a focus timer.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li><b>Notes and tasks</b>, with due dates, repeats and reminders.</li>
+    <li><b>A calendar</b> with events and reminders.</li>
+    <li><b>Goals and habits</b>, with streaks that forgive a missed day.</li>
+    <li><b>Email:</b> connect a Gmail account to read, search, write and organize your email inside Orbit, and turn an email into a task, note or calendar event.</li>
+  </ul>
+
+  <div class="card">Orbit is a private project made for one person. It runs only on its owner's own computer and isn't available to download.</div>
+
+  <p>Your data stays on your computer. Read the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer><span>Orbit</span><a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>
